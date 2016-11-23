@@ -9,9 +9,9 @@ export const getWebpackDevConfigPartial = function(projectRoot: string, appConfi
   return {
     output: {
       path: path.resolve(projectRoot, appConfig.outDir),
-      filename: '[name].bundle.js',
-      sourceMapFilename: '[name].bundle.map',
-      chunkFilename: '[id].chunk.js'
+      filename: '[name].[hash].bundle.js',
+      sourceMapFilename: '[name].[hash].bundle.map',
+      chunkFilename: '[id].[hash].chunk.js'
     },
     module: {
       rules: [
