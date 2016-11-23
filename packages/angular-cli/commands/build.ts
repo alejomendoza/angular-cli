@@ -12,6 +12,7 @@ export interface BuildOptions {
   baseHref?: string;
   aot?: boolean;
   sourcemap?: boolean;
+  publicPath?: string;
 }
 
 const BuildCommand = Command.extend({
